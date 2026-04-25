@@ -1,0 +1,68 @@
+{% extends "base.html" %}
+
+{% block title %}Privacy Policy — Spendly{% endblock %}
+
+{% block content %}
+<section class="terms-hero">
+    <div class="terms-hero-inner">
+        <p class="terms-eyebrow">Legal</p>
+        <h1 class="terms-title">Privacy Policy</h1>
+        <p class="terms-meta">Last updated: April 25, 2026</p>
+    </div>
+</section>
+
+<section class="terms-body">
+    <div class="terms-container">
+
+        <div class="terms-section">
+            <h2 class="terms-heading">1. Data We Collect</h2>
+            <p>When you use Spendly, we collect only the information necessary to provide the Service. This includes:</p>
+            <ul class="terms-list">
+                <li>Account information: your name and email address when you register</li>
+                <li>Expense data: amounts, categories, dates, and descriptions you enter</li>
+                <li>Usage data: pages visited and actions taken within the app, used to improve the experience</li>
+            </ul>
+            <p>We do not collect payment information, government IDs, or any sensitive financial account details.</p>
+        </div>
+
+        <div class="terms-section">
+            <h2 class="terms-heading">2. How We Use Your Data</h2>
+            <p>The data we collect is used solely to operate and improve Spendly. Specifically, we use it to:</p>
+            <ul class="terms-list">
+                <li>Provide and maintain your expense tracking dashboard</li>
+                <li>Authenticate your account and keep it secure</li>
+                <li>Respond to support requests or questions you send us</li>
+                <li>Understand how the app is used so we can fix bugs and improve features</li>
+            </ul>
+            <p>We will never sell, rent, or trade your personal data to third parties for marketing purposes.</p>
+        </div>
+
+        <div class="terms-section">
+            <h2 class="terms-heading">3. Data Storage</h2>
+            <p>Your data is stored on secured servers. We take reasonable technical and organisational precautions to protect your information against unauthorised access, loss, or misuse, including encrypted connections (HTTPS) and hashed password storage.</p>
+            <p>You may request deletion of your account and all associated data at any time by contacting us. We will process such requests within 30 days.</p>
+        </div>
+
+        <div class="terms-section">
+            <h2 class="terms-heading">4. Third-Party Services</h2>
+            <p>Spendly may use trusted third-party services to help operate the platform (for example, hosting providers). These services are granted access only to the data needed to perform their specific function and are contractually required to keep that data confidential.</p>
+            <p>We do not embed third-party advertising networks or tracking pixels. Any external fonts or assets (such as Google Fonts) are loaded from their respective CDNs and are subject to those providers' own privacy policies.</p>
+        </div>
+
+        <div class="terms-section">
+            <h2 class="terms-heading">5. Cookies</h2>
+            <p>Spendly uses only essential session cookies required to keep you logged in. We do not use tracking or advertising cookies. You can disable cookies in your browser settings, though doing so will prevent you from staying signed in.</p>
+        </div>
+
+        <div class="terms-section">
+            <h2 class="terms-heading">6. Contact Us</h2>
+            <p>If you have questions about this Privacy Policy or would like to request access to, correction of, or deletion of your personal data, please reach out through the contact information available on our site. We take privacy concerns seriously and will respond promptly.</p>
+        </div>
+
+        <div class="terms-back">
+            <a href="{{ url_for('landing') }}" class="btn-ghost">← Back to home</a>
+        </div>
+
+    </div>
+</section>
+{% endblock %}
